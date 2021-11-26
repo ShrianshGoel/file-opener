@@ -117,7 +117,7 @@ resizeCanvas(windowWidth, windowHeight);
   input.size(height/0.6,width/15)
   if(pw===1){
        video.position(width/142,height/7.30)
-button.size(width/5.85,height/3)
+button.size(width/5,height/2)
       button.position(width/2.51,height/2.20)
      b1.position(width/2.81,height/1.20)
    
