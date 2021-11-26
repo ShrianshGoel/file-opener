@@ -24,7 +24,7 @@ function draw() {
     print(file)
     var gh=0
 var er=1
-    if (file.type==='video'||file.subtype==="mkv"){
+    if (file.type==='video'||file.subtype==="undefined"){
       video  = createVideo(file.data,"")
       video.class("o2")
       video.position(width/142,height/7.30)
@@ -38,7 +38,7 @@ var er=1
 
      button=createButton("")
   button.position(width/2.5,height/2.5)
-  button.size(width/5,height/2)
+  button.size(width/5,height/2.4)
   button.class("o3")
         b1=createButton("")
   b1.position(width/2.81,height/1.20)
@@ -95,11 +95,28 @@ img.class("o2")
       if(ch===0){
         img.hide()
       }
+      var h = createElement("h2","Size:"+file.size/1048576+" mb")
+ h.class("okd")
+ var h2= createElement("h2","Name:"+file.name)
+  h2.class("okd")
+       var h3= createElement("h2","Type:"+file.type+"   Extension:"+file.subtype)
+  h3.class("okd")
+      var h4= createElement("h2","Last Modified:"+file.file.lastModifiedDate)
+  h4.class("okd")
   }
     
     if(file.type==="audio"){
     a=createAudio(file.data)
   a.play()
+      
+      var h = createElement("h2","Size:"+file.size/1048576+" mb")
+ h.class("okd")
+ var h2= createElement("h2","Name:"+file.name)
+  h2.class("okd")
+       var h3= createElement("h2","Type:"+file.type+"   Extension:"+file.subtype)
+  h3.class("okd")
+      var h4= createElement("h2","Last Modified:"+file.file.lastModifiedDate)
+  h4.class("okd")
     }else{
             a.pause()
     }
@@ -117,7 +134,7 @@ resizeCanvas(windowWidth, windowHeight);
   input.size(height/0.6,width/15)
   if(pw===1){
        video.position(width/142,height/7.30)
-button.size(width/5,height/2)
+button.size(width/5,height/2.4)
       button.position(width/2.51,height/2.20)
      b1.position(width/2.81,height/1.20)
    
