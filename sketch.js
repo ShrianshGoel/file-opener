@@ -24,7 +24,7 @@ function draw() {
     print(file)
     var gh=0
 var er=1
-    if (file.type==='video'||file.subtype==="undefined"){
+    if (file.type==='video'||file.subtype==="mkv"){
       video  = createVideo(file.data,"")
       video.class("o2")
       video.position(width/142,height/7.30)
@@ -38,7 +38,7 @@ var er=1
 
      button=createButton("")
   button.position(width/2.5,height/2.5)
-  button.size(width/5.85,height/3)
+  button.size(width/5,height/2)
   button.class("o3")
         b1=createButton("")
   b1.position(width/2.81,height/1.20)
