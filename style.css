@@ -41,7 +41,7 @@ canvas {
   border-radius:230px;
 
   color:aqua;
-        background-image:url('p.png');
+        background-image:url(https://shrianshgoel.github.io/file-opener/p.png);
   background-size:cover;
          border: 5px solid white;
      font-size:24px;
@@ -62,5 +62,8 @@ canvas {
  
 }
 
-o4:hover{  transform: scale(1.2);}
-
+.o4:hover{  transform: scale(1.2);}
+.okd{
+  color:Orange;
+       font-size:24px;
+}
